@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="101.439034">
+<testcase classname="Free CRM Create Contacts" name="Free CRM CreateContact Scenario" time="17.10569">
+<system-out><![CDATA[Given User is on login page.................................................passed
+When Title of the page is CRMPRO Log In Screen..............................passed
+Then User enter "ajay_automation" and "ajay@2301"...........................passed
+Then User clicks on login button............................................passed
+And User is on Homepage.....................................................passed
+Then User moves to NewContact Page..........................................passed
+Then User enters "Tom" and "Peter" and "Manager"............................passed
+Then Close the Browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Create Contacts" name="Free CRM CreateContact Scenario 2" time="17.004254">
+<system-out><![CDATA[Given User is on login page.................................................passed
+When Title of the page is CRMPRO Log In Screen..............................passed
+Then User enter "ajay_automation" and "ajay@2301"...........................passed
+Then User clicks on login button............................................passed
+And User is on Homepage.....................................................passed
+Then User moves to NewContact Page..........................................passed
+Then User enters "John" and "Peter" and "Sr.Manager"........................passed
+Then Close the Browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Create Contacts" name="Free CRM CreateContact Scenario 3" time="17.157859">
+<system-out><![CDATA[Given User is on login page.................................................passed
+When Title of the page is CRMPRO Log In Screen..............................passed
+Then User enter "ajay_automation" and "ajay@2301"...........................passed
+Then User clicks on login button............................................passed
+And User is on Homepage.....................................................passed
+Then User moves to NewContact Page..........................................passed
+Then User enters "Som" and "Peter" and "Assistant Manager"..................passed
+Then Close the Browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Create Contacts" name="Free CRM CreateContact Scenario 4" time="16.858624">
+<system-out><![CDATA[Given User is on login page.................................................passed
+When Title of the page is CRMPRO Log In Screen..............................passed
+Then User enter "ajay_automation" and "ajay@2301"...........................passed
+Then User clicks on login button............................................passed
+And User is on Homepage.....................................................passed
+Then User moves to NewContact Page..........................................passed
+Then User enters "Nath" and "Peter" and "General Manager"...................passed
+Then Close the Browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Login Feature" name="Free CRM Login Test Scenario" time="13.236131">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;CRMPRO[]&gt; but was:&lt;CRMPRO[ - CRM software for customer relationship management, sales, and support.]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at stepDefinitions.LoginStepDefinition.user_is_on_Homepage(LoginStepDefinition.java:70)&#13;&#10;&#9;at ✽.And User is on Homepage(login.feature:28)&#13;&#10;"><![CDATA[Given User is on login page.................................................passed
+When Title of the page is CRMPRO Log In Screen..............................passed
+Then User enter "ajay_automation" and "password"............................passed
+Then User clicks on login button............................................passed
+And User is on Homepage.....................................................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<CRMPRO[]> but was:<CRMPRO[ - CRM software for customer relationship management, sales, and support.]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinitions.LoginStepDefinition.user_is_on_Homepage(LoginStepDefinition.java:70)
+	at ✽.And User is on Homepage(login.feature:28)
+]]></failure>
+</testcase>
+<testcase classname="Free CRM Login Feature" name="User is able to create new contact" time="20.076476">
+<system-out><![CDATA[Given User is on homepage when User enter "ajay_automation" and "ajay@2301".passed
+When User mousehover to contacts............................................passed
+Then User clicks on new contact.............................................passed
+Then User Enter the first name , last name ,and company name................passed
+Then User clicks on save button.............................................passed
+Then Verify new contact is created..........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
