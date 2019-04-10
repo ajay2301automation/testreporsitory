@@ -18,7 +18,7 @@ import cucumber.api.junit.Cucumber;
 				//now making dryRun= false
 				
 				,strict = false// if this is true then it will fail the execution if any of the step in stepdefinition is missing 	
-				,monochrome = true	 // generate the output in readable format
+				,monochrome = true	 // generate the output in readable format  just to check again
 		)
 public class TestRunner {
 
